@@ -43,7 +43,6 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
                     core_1.Component({
                         selector: 'my-dashboard',
                         templateUrl: 'app/templates/dashboard.component.html',
-                        styleUrls: ['app/css/dashboard.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, ship_service_1.ShipService])
                 ], DashboardComponent);

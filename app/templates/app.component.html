@@ -1,6 +1,19 @@
-<h1>{{title}}</h1>
-<nav>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <!--<a [routerLink]="['Heroes']">Heroes</a>-->
-</nav>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <nav class="navbar navbar-default">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['Dashboard']">{{ title }}</a>
+        </li>
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="#">Link</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" href="#">Another link</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+        <!--</li>-->
+    </ul>
+        </nav>
+    <router-outlet></router-outlet>
+</div>

@@ -49,7 +49,6 @@ System.register(['angular2/core', 'angular2/router', './ship', './ship.service']
                     core_1.Component({
                         selector: 'ship-detail',
                         templateUrl: 'app/templates/ship-detail.component.html',
-                        styleUrls: ['app/css/dashboard.component.css']
                     }), 
                     __metadata('design:paramtypes', [ship_service_1.ShipService, router_1.RouteParams])
                 ], ShipDetailComponent);

@@ -7,7 +7,7 @@ import { ShipService } from './ship.service';
 @Component({
     selector: 'ship-detail',
     templateUrl: 'app/templates/ship-detail.component.html',
-    styleUrls: ['app/css/dashboard.component.css']
+    //styleUrls: ['app/css/dashboard.component.css']
 })
 export class ShipDetailComponent implements OnInit {
     @Input()

@@ -38,7 +38,7 @@ System.register(['angular2/core', 'angular2/router', './ship.service', './dashbo
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/templates/app.component.html',
-                        styleUrls: ['app/css/app.component.css'],
+                        //styleUrls: ['app/css/app.component.css'],
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
