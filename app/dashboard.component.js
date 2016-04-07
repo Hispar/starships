@@ -33,7 +33,7 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
                 DashboardComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this._shipService.getShips()
-                        .then(function (ships) { return _this.ships = ships.slice(1, 5); });
+                        .then(function (ships) { return _this.ships = ships.slice(0, 8); });
                 };
                 DashboardComponent.prototype.gotoDetail = function (ship) {
                     var link = ['ShipDetail', { id: ship.id }];

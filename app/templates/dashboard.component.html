@@ -1,10 +1,12 @@
-<h3>Top Ships</h3>
-<div class="grid grid-pad">
-    <div *ngFor="#ship of ships" (click)="gotoDetail(ship)" class="col-1-4">
-        <div class="module ship">
-            <!--<img src="{{ship.image}}">-->
-            <h4>{{ship.model}}</h4>
-            <p>{{ship.focus}}</p>
+<div class="row">
+    <h3>Top Ships</h3>
+    <div class="row">
+        <div *ngFor="#ship of ships" (click)="gotoDetail(ship)" class="col-lg-3">
+            <div class="module ship">
+                <img class="img-responsive" src="{{ship.image}}">
+                <h4>{{ship.model}}</h4>
+                <p>{{ship.focus}}</p>
+            </div>
         </div>
     </div>
 </div>
