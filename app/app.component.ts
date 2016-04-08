@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 import { ShipService } from './ship.service';
+import { FocusService } from './focus.service';
 //import {HeroesComponent} from './heroes.component'
 import { DashboardComponent } from './dashboard.component'
 import { ShipDetailComponent } from './ship-detail.component'
@@ -14,7 +15,8 @@ import { ShipDetailComponent } from './ship-detail.component'
     directives: [ROUTER_DIRECTIVES],
     providers: [
         ROUTER_PROVIDERS,
-        ShipService
+        ShipService,
+        FocusService
     ]
 })
 @RouteConfig([

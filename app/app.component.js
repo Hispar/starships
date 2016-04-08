@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './ship.service', './dashboard.component', './ship-detail.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './ship.service', './focus.service', './dashboard.component', './ship-detail.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './ship.service', './dashbo
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, ship_service_1, dashboard_component_1, ship_detail_component_1;
+    var core_1, router_1, ship_service_1, focus_service_1, dashboard_component_1, ship_detail_component_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './ship.service', './dashbo
             },
             function (ship_service_1_1) {
                 ship_service_1 = ship_service_1_1;
+            },
+            function (focus_service_1_1) {
+                focus_service_1 = focus_service_1_1;
             },
             function (dashboard_component_1_1) {
                 dashboard_component_1 = dashboard_component_1_1;
@@ -42,7 +45,8 @@ System.register(['angular2/core', 'angular2/router', './ship.service', './dashbo
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
-                            ship_service_1.ShipService
+                            ship_service_1.ShipService,
+                            focus_service_1.FocusService
                         ]
                     }),
                     router_1.RouteConfig([
