@@ -29,8 +29,14 @@ System.register(['angular2/core', './mock-ships', './focus.service'], function(e
                     this._focusService = _focusService;
                 }
                 ShipService.prototype.getShip = function (id) {
-                    var _this = this;
-                    return Promise.resolve(mock_ships_1.SHIPS).then(function (ships) { return ships.filter(function (ship) { return ship.id === id; })[0]; }).then(function (ship) { return ship.focus = _this._focusService.getFocus(ship.focus); });
+                    var that = this;
+                    var obj = Promise.resolve(mock_ships_1.SHIPS).then(function (ships) {
+                        var ship = ships.filter(function (ship) { return ship.id === id; })[0];
+                        ship.focus = that._focusService.getFocus(ship.focus[0]);
+                        return ship;
+                    });
+                    console.log(obj);
+                    return obj;
                 };
                 ShipService.prototype.getShips = function () {
                     return Promise.resolve(mock_ships_1.SHIPS);

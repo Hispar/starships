@@ -10,9 +10,16 @@ export class ShipService {
     constructor(private _focusService : FocusService) { }
 
     getShip(id:number) {
-        return Promise.resolve(SHIPS).then(
-                ships => ships.filter(ship => ship.id === id)[0]
-        ).then(ship => ship.focus = this._focusService.getFocus(ship.focus));
+        var that = this;
+        var obj = Promise.resolve(SHIPS).then(
+                function(ships){
+                    var ship = ships.filter(ship => ship.id === id)[0];
+                    ship.focus = that._focusService.getFocus(ship.focus[0]);
+                    return ship;
+                }
+        );
+        console.log(obj);
+        return obj;
     }
 
     getShips() {
