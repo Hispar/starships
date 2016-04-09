@@ -37,13 +37,15 @@ export var SHIPS:Ship[] = [
         "description": "",
         "image": "https://robertsspaceindustries.com/media/dtqy8jpl0f9cbr/store_small/Delta-Front.jpg"
     },
-    // {
-    //     "id": 5,
-    //     "model": "Mustang Omega",
-    //     "focus": "Racing",
-    //     "description": "",
-    //     "image": "https://robertsspaceindu0stries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
-    // },
+    {
+        "id": 5,
+        "model": "Mustang Omega",
+        "focus": [
+            {"id": 1, "name": 'Racing'}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindu0stries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
+    },
     //{"id": 6, "model": "Mustang Alpha", "focus": "Starter", "description": "", "image": ""},
     //{"id": 7, "model": "Redeemer", "focus": "Gunship", "description": "", "image": ""},
     //{"id": 8, "model": "Gladius", "focus": "Short-range Patrol Fighter", "description": "", "image": ""},

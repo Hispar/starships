@@ -42,6 +42,15 @@ System.register([], function(exports_1, context_1) {
                     "description": "",
                     "image": "https://robertsspaceindustries.com/media/dtqy8jpl0f9cbr/store_small/Delta-Front.jpg"
                 },
+                {
+                    "id": 5,
+                    "model": "Mustang Omega",
+                    "focus": [
+                        { "id": 1, "name": 'Racing' }
+                    ],
+                    "description": "",
+                    "image": "https://robertsspaceindu0stries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
+                },
             ]);
         }
     }
