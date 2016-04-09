@@ -4,13 +4,9 @@ import { Router } from 'angular2/router';
 import { Ship } from './ship';
 import { ShipService } from './ship.service';
 
-import { ShipFocusComponent } from './ship-focus.component.ts'
-
 @Component({
     selector: 'my-dashboard',
     templateUrl: 'app/templates/dashboard.component.html',
-    //styleUrls: ['app/css/dashboard.component.css']
-    directives: [ShipFocusComponent]
 })
 export class DashboardComponent implements OnInit {
     ships:Ship[] = [];

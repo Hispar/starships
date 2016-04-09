@@ -1,4 +1,4 @@
-System.register(['angular2/core', './ship-focus.service.ts'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,32 +10,24 @@ System.register(['angular2/core', './ship-focus.service.ts'], function(exports_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, ship_focus_service_ts_1;
+    var core_1;
     var ShipFocusComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (ship_focus_service_ts_1_1) {
-                ship_focus_service_ts_1 = ship_focus_service_ts_1_1;
             }],
         execute: function() {
+            // import { ShipFocusService } from './ship-focus.service.ts';
             ShipFocusComponent = (function () {
-                function ShipFocusComponent(_shipfocusService) {
-                    this._shipfocusService = _shipfocusService;
+                function ShipFocusComponent() {
                 }
-                ShipFocusComponent.prototype.getShipFocus = function (id) {
-                    var _this = this;
-                    this._shipfocusService.getShipFocus(id)
-                        .then(function (shipfocus) { return _this.shipfocus = shipfocus; });
-                };
                 ShipFocusComponent = __decorate([
                     core_1.Component({
-                        selector: 'shipocus',
-                        template: '<label>focus: </label>{{getShipFocus(focus_id)}}'
+                        selector: 'ship-focus',
+                        template: "<div *ngIf=\"focuslist\">\na{{focuslist}}b\n        <div *ngFor=\"#focus of focuslist\" class=\"col-lg-3\">\n            {{ focus.name }}\n        </div>\n    </div>\n    "
                     }), 
-                    __metadata('design:paramtypes', [ship_focus_service_ts_1.ShipFocusService])
+                    __metadata('design:paramtypes', [])
                 ], ShipFocusComponent);
                 return ShipFocusComponent;
             }());
