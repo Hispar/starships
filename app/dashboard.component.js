@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './ship.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './ship.service', './ship-focus.component.ts'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, ship_service_1;
+    var core_1, router_1, ship_service_1, ship_focus_component_ts_1;
     var DashboardComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
             },
             function (ship_service_1_1) {
                 ship_service_1 = ship_service_1_1;
+            },
+            function (ship_focus_component_ts_1_1) {
+                ship_focus_component_ts_1 = ship_focus_component_ts_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
@@ -43,6 +46,8 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
                     core_1.Component({
                         selector: 'my-dashboard',
                         templateUrl: 'app/templates/dashboard.component.html',
+                        //styleUrls: ['app/css/dashboard.component.css']
+                        directives: [ship_focus_component_ts_1.ShipFocusComponent]
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, ship_service_1.ShipService])
                 ], DashboardComponent);

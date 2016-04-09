@@ -1,11 +1,11 @@
 System.register([], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var FOCUSES;
+    var SHIPFOCUSES;
     return {
         setters:[],
         execute: function() {
-            exports_1("FOCUSES", FOCUSES = [
+            exports_1("SHIPFOCUSES", SHIPFOCUSES = [
                 { "id": 1, "name": "Racing" },
                 { "id": 2, "name": "Fighter" },
                 { "id": 3, "name": "Interception" },
@@ -19,4 +19,4 @@ System.register([], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=mock-focus.js.map
+//# sourceMappingURL=mock-ship-focus.js.map

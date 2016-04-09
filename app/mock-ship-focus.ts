@@ -1,6 +1,6 @@
-import { Focus } from './focus'
+import { ShipFocus } from './ship-focus'
 
-export var FOCUSES:Focus[] = [
+export var SHIPFOCUSES:ShipFocus[] = [
     {"id": 1, "name": "Racing"},
     {"id": 2, "name": "Fighter"},
     {"id": 3, "name": "Interception"},

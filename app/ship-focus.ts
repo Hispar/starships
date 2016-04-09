@@ -1,4 +1,4 @@
-export class Focus {
+export class ShipFocus {
     id: number;
     name: string;
 }

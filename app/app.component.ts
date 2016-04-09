@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 import { ShipService } from './ship.service';
-import { FocusService } from './focus.service';
+import { FocusService } from './ship-focus.service.ts';
 //import {HeroesComponent} from './heroes.component'
 import { DashboardComponent } from './dashboard.component'
 import { ShipDetailComponent } from './ship-detail.component'

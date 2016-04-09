@@ -1,17 +1,17 @@
 System.register([], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var Focus;
+    var ShipFocus;
     return {
         setters:[],
         execute: function() {
-            Focus = (function () {
-                function Focus() {
+            ShipFocus = (function () {
+                function ShipFocus() {
                 }
-                return Focus;
+                return ShipFocus;
             }());
-            exports_1("Focus", Focus);
+            exports_1("ShipFocus", ShipFocus);
         }
     }
 });
-//# sourceMappingURL=focus.js.map
+//# sourceMappingURL=ship-focus.js.map

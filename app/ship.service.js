@@ -1,4 +1,4 @@
-System.register(['angular2/core', './mock-ships', './focus.service'], function(exports_1, context_1) {
+System.register(['angular2/core', './mock-ships'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './mock-ships', './focus.service'], function(e
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, mock_ships_1, focus_service_1;
+    var core_1, mock_ships_1;
     var ShipService;
     return {
         setters:[
@@ -19,31 +19,20 @@ System.register(['angular2/core', './mock-ships', './focus.service'], function(e
             },
             function (mock_ships_1_1) {
                 mock_ships_1 = mock_ships_1_1;
-            },
-            function (focus_service_1_1) {
-                focus_service_1 = focus_service_1_1;
             }],
         execute: function() {
             ShipService = (function () {
-                function ShipService(_focusService) {
-                    this._focusService = _focusService;
+                function ShipService() {
                 }
                 ShipService.prototype.getShip = function (id) {
-                    var that = this;
-                    var obj = Promise.resolve(mock_ships_1.SHIPS).then(function (ships) {
-                        var ship = ships.filter(function (ship) { return ship.id === id; })[0];
-                        ship.focus = that._focusService.getFocus(ship.focus[0]);
-                        return ship;
-                    });
-                    console.log(obj);
-                    return obj;
+                    return Promise.resolve(mock_ships_1.SHIPS).then(function (ships) { return ships.filter(function (ship) { return ship.id === id; })[0]; });
                 };
                 ShipService.prototype.getShips = function () {
                     return Promise.resolve(mock_ships_1.SHIPS);
                 };
                 ShipService = __decorate([
                     core_1.Injectable(), 
-                    __metadata('design:paramtypes', [focus_service_1.FocusService])
+                    __metadata('design:paramtypes', [])
                 ], ShipService);
                 return ShipService;
             }());

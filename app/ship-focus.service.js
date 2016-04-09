@@ -1,4 +1,4 @@
-System.register(['angular2/core', './mock-focus'], function(exports_1, context_1) {
+System.register(['angular2/core', './mock-ship-focus'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,34 +10,34 @@ System.register(['angular2/core', './mock-focus'], function(exports_1, context_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, mock_focus_1;
-    var FocusService;
+    var core_1, mock_ship_focus_1;
+    var ShipFocusService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (mock_focus_1_1) {
-                mock_focus_1 = mock_focus_1_1;
+            function (mock_ship_focus_1_1) {
+                mock_ship_focus_1 = mock_ship_focus_1_1;
             }],
         execute: function() {
-            FocusService = (function () {
-                function FocusService() {
+            ShipFocusService = (function () {
+                function ShipFocusService() {
                 }
-                FocusService.prototype.getFocus = function (id) {
-                    return Promise.resolve(mock_focus_1.FOCUSES).then(function (focuses) { return focuses.filter(function (focus) { return focus.id === id; })[0]; });
+                ShipFocusService.prototype.getShipFocus = function (id) {
+                    return Promise.resolve(mock_ship_focus_1.SHIPFOCUSES).then(function (shipfocuses) { return shipfocuses.filter(function (shipfocus) { return shipfocus.id === id; })[0]; });
                 };
-                FocusService.prototype.getFocuses = function () {
-                    return Promise.resolve(mock_focus_1.FOCUSES);
+                ShipFocusService.prototype.getShipFocuses = function () {
+                    return Promise.resolve(mock_ship_focus_1.SHIPFOCUSES);
                 };
-                FocusService = __decorate([
+                ShipFocusService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], FocusService);
-                return FocusService;
+                ], ShipFocusService);
+                return ShipFocusService;
             }());
-            exports_1("FocusService", FocusService);
+            exports_1("ShipFocusService", ShipFocusService);
         }
     }
 });
-//# sourceMappingURL=focus.service.js.map
+//# sourceMappingURL=ship-focus.service.js.map
