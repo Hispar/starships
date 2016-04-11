@@ -1,4 +1,4 @@
-import { ShipFocus } from './ship-focus'
+import {ShipFocus} from './ship-focus'
 
 export class Ship {
     id:number;
