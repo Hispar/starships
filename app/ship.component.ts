@@ -1,6 +1,6 @@
-import { Component, Input } from 'angular2/core';
-import { Router } from 'angular2/router';
-import { Ship } from './ship';
+import {Component, Input} from 'angular2/core';
+import {Router} from 'angular2/router';
+import {Ship} from './models/ship';
 
 
 @Component({
@@ -8,14 +8,13 @@ import { Ship } from './ship';
     templateUrl: 'app/templates/ship.component.html',
 })
 export class ShipComponent {
-    @Input() ship: Ship;
+    @Input() ship:Ship;
 
-    constructor(
-        private _router: Router){
+    constructor(private _router:Router) {
     }
 
     gotoDetail(ship) {
-        let link = ['ShipDetail', { id: ship.id }];
+        let link = ['ShipDetail', {id: ship.id}];
         this._router.navigate(link);
     }
 }

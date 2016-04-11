@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from 'angular2/core';
-import { RouteParams } from 'angular2/router';
+import {RouteParams} from 'angular2/router';
 
-import { Ship } from './ship';
-import { ShipService } from './ship.service';
+import {Ship} from './models/ship';
+import {ShipService} from './ship.service';
 
 @Component({
     selector: 'ship-detail',
@@ -11,7 +11,7 @@ import { ShipService } from './ship.service';
 })
 export class ShipDetailComponent implements OnInit {
     @Input()
-        ship:Ship;
+    ship:Ship;
 
     constructor(private _shipService:ShipService,
                 private _routeParams:RouteParams) {
