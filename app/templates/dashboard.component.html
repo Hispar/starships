@@ -5,9 +5,10 @@
             <div class="module ship">
                 <img class="img-responsive" src="{{ship.image}}">
                 <h4>{{ship.model}}</h4>
-                <div *ngFor="#focus of ship.focus">
+                <span *ngFor="#focus of ship.focus; #i=index">
+                    <span *ngIf="i">|</span>
                     {{ focus.name }}
-                </div>
+                </span>
             </div>
         </div>
     </div>

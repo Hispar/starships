@@ -12,7 +12,7 @@ System.register([], function(exports_1, context_1) {
                     "focus": [
                         { "id": 1, "name": 'Racing' }, { "id": 2, "name": "Fighter" },
                     ],
-                    "description": "",
+                    "description": "Texto descripción",
                     "image": "https://robertsspaceindustries.com/media/xfs6elgejzxz9r/store_small/M50_new_comp47.jpg"
                 },
                 {
@@ -49,7 +49,7 @@ System.register([], function(exports_1, context_1) {
                         { "id": 1, "name": 'Racing' }
                     ],
                     "description": "",
-                    "image": "https://robertsspaceindu0stries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
+                    "image": "https://robertsspaceindustries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
                 },
             ]);
         }
