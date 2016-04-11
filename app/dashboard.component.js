@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './ship.service', './row.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './ship.service', './row.component', "./pipes/search.pipe"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,41 +10,45 @@ System.register(['angular2/core', 'angular2/router', './ship.service', './row.co
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, ship_service_1, row_component_1;
+    var core_1, ship_service_1, row_component_1, search_pipe_1;
     var DashboardComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (router_1_1) {
-                router_1 = router_1_1;
-            },
             function (ship_service_1_1) {
                 ship_service_1 = ship_service_1_1;
             },
             function (row_component_1_1) {
                 row_component_1 = row_component_1_1;
+            },
+            function (search_pipe_1_1) {
+                search_pipe_1 = search_pipe_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
-                function DashboardComponent(_router, _shipService) {
-                    this._router = _router;
+                function DashboardComponent(_shipService) {
                     this._shipService = _shipService;
                     this.ships = [];
                 }
                 DashboardComponent.prototype.ngOnInit = function () {
-                    var _this = this;
+                    var that = this;
                     this._shipService.getShips()
-                        .then(function (ships) { return _this.ships[0] = ships.slice(0, 4); });
+                        .then(function (ships) {
+                        for (var j = 0; (j * 4) < ships.length; j++) {
+                            that.ships[j] = ships.slice(4 * j, 4 * j + 4);
+                        }
+                    });
                 };
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',
+                        pipes: [search_pipe_1.SearchPipe],
                         templateUrl: 'app/templates/dashboard.component.html',
                         directives: [row_component_1.RowComponent]
                     }), 
-                    __metadata('design:paramtypes', [router_1.Router, ship_service_1.ShipService])
+                    __metadata('design:paramtypes', [ship_service_1.ShipService])
                 ], DashboardComponent);
                 return DashboardComponent;
             }());
