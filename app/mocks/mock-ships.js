@@ -51,6 +51,15 @@ System.register([], function(exports_1, context_1) {
                     "description": "",
                     "image": "https://robertsspaceindustries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
                 },
+                {
+                    "id": 6,
+                    "model": "Mustang Alpha",
+                    "focus": [
+                        { "id": 5, "name": "Starter" }
+                    ],
+                    "description": "",
+                    "image": "https://robertsspaceindustries.com/media/ssh2spko70pz6r/store_small/Alpha-Front.jpg"
+                },
             ]);
         }
     }

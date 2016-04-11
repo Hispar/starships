@@ -1,4 +1,4 @@
-import {Ship} from './ship';
+import {Ship} from '../models/ship';
 
 export var SHIPS:Ship[] = [
     {
@@ -46,7 +46,15 @@ export var SHIPS:Ship[] = [
         "description": "",
         "image": "https://robertsspaceindustries.com/media/gmru9y7ynd1bbr/store_small/Omega-Front.jpg"
     },
-    //{"id": 6, "model": "Mustang Alpha", "focus": "Starter", "description": "", "image": ""},
+    {
+        "id": 6,
+        "model": "Mustang Alpha",
+        "focus": [
+            {"id": 5, "name": "Starter"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/ssh2spko70pz6r/store_small/Alpha-Front.jpg"
+    },
     //{"id": 7, "model": "Redeemer", "focus": "Gunship", "description": "", "image": ""},
     //{"id": 8, "model": "Gladius", "focus": "Short-range Patrol Fighter", "description": "", "image": ""},
     //{"id": 9, "model": "Aurora ES", "focus": "Starter/Exploration", "description": "", "image": ""},

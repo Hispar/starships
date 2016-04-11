@@ -1,4 +1,4 @@
-import { ShipFocus } from './ship-focus'
+import {ShipFocus} from '../models/ship-focus'
 
 export var SHIPFOCUSES:ShipFocus[] = [
     {"id": 1, "name": "Racing"},
