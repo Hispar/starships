@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './ship.service'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './ship.service', './row.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, ship_service_1;
+    var core_1, router_1, ship_service_1, row_component_1;
     var DashboardComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
             },
             function (ship_service_1_1) {
                 ship_service_1 = ship_service_1_1;
+            },
+            function (row_component_1_1) {
+                row_component_1 = row_component_1_1;
             }],
         execute: function() {
             DashboardComponent = (function () {
@@ -33,16 +36,13 @@ System.register(['angular2/core', 'angular2/router', './ship.service'], function
                 DashboardComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this._shipService.getShips()
-                        .then(function (ships) { return _this.ships = ships.slice(0, 8); });
-                };
-                DashboardComponent.prototype.gotoDetail = function (ship) {
-                    var link = ['ShipDetail', { id: ship.id }];
-                    this._router.navigate(link);
+                        .then(function (ships) { return _this.ships[0] = ships.slice(0, 4); });
                 };
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',
                         templateUrl: 'app/templates/dashboard.component.html',
+                        directives: [row_component_1.RowComponent]
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, ship_service_1.ShipService])
                 ], DashboardComponent);

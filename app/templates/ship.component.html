@@ -1,0 +1,10 @@
+<div (click)="gotoDetail(ship)" class="col-lg-3">
+    <div class="module ship">
+        <img class="img-responsive" src="{{ship.image}}">
+        <h4>{{ship.model}}</h4>
+        <span *ngFor="#focus of ship.focus; #i=index">
+            <span *ngIf="i">|</span>
+            {{ focus.name }}
+        </span>
+    </div>
+</div>

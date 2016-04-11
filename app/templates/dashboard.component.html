@@ -1,15 +1,6 @@
 <div class="row">
     <h3>Top Ships</h3>
     <div class="row">
-        <div *ngFor="#ship of ships" (click)="gotoDetail(ship)" class="col-lg-3">
-            <div class="module ship">
-                <img class="img-responsive" src="{{ship.image}}">
-                <h4>{{ship.model}}</h4>
-                <span *ngFor="#focus of ship.focus; #i=index">
-                    <span *ngIf="i">|</span>
-                    {{ focus.name }}
-                </span>
-            </div>
-        </div>
+        <row *ngFor="#row of ships" [row]="row"></row>
     </div>
 </div>
