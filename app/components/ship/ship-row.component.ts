@@ -6,6 +6,6 @@ import { ShipComponent } from './ship.component';
     template: `<ship *ngFor="#ship of row" [ship]="ship"></ship>`,
     directives: [ShipComponent]
 })
-export class RowComponent {
+export class ShipRowComponent {
     @Input() row: any;
 }

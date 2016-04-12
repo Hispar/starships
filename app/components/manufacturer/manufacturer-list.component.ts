@@ -2,22 +2,17 @@ import {Component, OnInit} from 'angular2/core';
 
 import {ManufacturerRowComponent} from './manufacturer-row.component'
 import {ManufacturerService} from '../../services/manufacturer.service';
-//import { ShipService } from './ship.service';
-//import { ShipDetailComponent } from './ship-detail.component'
 
 
 @Component({
     selector: 'manufacturers-list',
     templateUrl: 'app/templates/manufacturer-list.component.html',
     directives: [ManufacturerRowComponent]
-    //providers: [
-    //    ShipService,
-    //]
 })
-export class ManufacturerListComponent implements OnInit{
+export class ManufacturerListComponent implements OnInit {
     title = 'Manufacturers';
     manufacturers = [];
-    elements = 5;
+    elements = 4;
 
     constructor(private _manufacturerService:ManufacturerService) {
     }
