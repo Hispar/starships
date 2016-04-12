@@ -1,4 +1,4 @@
-System.register(['angular2/core', './ship.service', './row.component', "./pipes/search.pipe"], function(exports_1, context_1) {
+System.register(['angular2/core', './ship.service', './row.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './ship.service', './row.component', "./pipes/
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, ship_service_1, row_component_1, search_pipe_1;
+    var core_1, ship_service_1, row_component_1;
     var DashboardComponent;
     return {
         setters:[
@@ -22,16 +22,15 @@ System.register(['angular2/core', './ship.service', './row.component', "./pipes/
             },
             function (row_component_1_1) {
                 row_component_1 = row_component_1_1;
-            },
-            function (search_pipe_1_1) {
-                search_pipe_1 = search_pipe_1_1;
             }],
         execute: function() {
+            //import {SearchPipe} from "./pipes/search.pipe";
             DashboardComponent = (function () {
                 function DashboardComponent(_shipService) {
                     this._shipService = _shipService;
                     this.ships = [];
                     this.elements = 3;
+                    this.title = 'Top Ships';
                 }
                 DashboardComponent.prototype.ngOnInit = function () {
                     var that = this;
@@ -45,7 +44,7 @@ System.register(['angular2/core', './ship.service', './row.component', "./pipes/
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',
-                        pipes: [search_pipe_1.SearchPipe],
+                        //pipes: [SearchPipe],
                         templateUrl: 'app/templates/dashboard.component.html',
                         directives: [row_component_1.RowComponent]
                     }), 
