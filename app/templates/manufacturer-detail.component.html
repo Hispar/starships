@@ -1,0 +1,6 @@
+<div *ngIf="manufacturer">
+    <h2>{{manufacturer.name}}</h2>
+    <!--<div><label>id: </label>{{manufacturer.id}}</div>-->
+    <img src="{{manufacturer.icon}}">
+</div>
+<button (click)="goBack()">Back</button>

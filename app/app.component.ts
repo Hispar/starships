@@ -1,11 +1,17 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
+// Services
 import {ShipService} from './services/ship.service';
 import {ManufacturerService} from './services/manufacturer.service';
+
+//Ship components
 import {DashboardComponent} from './components/ship/dashboard.component'
 import {ShipDetailComponent} from './components/ship/ship-detail.component'
+
+// Manufacturer components
 import {ManufacturerListComponent} from './components/manufacturer/manufacturer-list.component'
+import {ManufacturerDetailComponent} from './components/manufacturer/manufacturer-detail.component'
 
 
 @Component({
@@ -29,9 +35,13 @@ import {ManufacturerListComponent} from './components/manufacturer/manufacturer-
         name: 'Manufacturers',
         component: ManufacturerListComponent,
     }, {
-        path: '/detail/:id',
+        path: '/ship/:id',
         name: 'ShipDetail',
         component: ShipDetailComponent,
+    }, {
+        path: '/manufacturer/:id',
+        name: 'ManufacturerDetail',
+        component: ManufacturerDetailComponent,
     }
 ])
 export class AppComponent {
