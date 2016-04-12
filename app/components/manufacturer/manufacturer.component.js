@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../../models/manufacturer'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', '../../models/manufacturer'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,20 +10,28 @@ System.register(['angular2/core', '../../models/manufacturer'], function(exports
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, manufacturer_1;
+    var core_1, router_1, manufacturer_1;
     var ManufacturerComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
+            function (router_1_1) {
+                router_1 = router_1_1;
+            },
             function (manufacturer_1_1) {
                 manufacturer_1 = manufacturer_1_1;
             }],
         execute: function() {
             ManufacturerComponent = (function () {
-                function ManufacturerComponent() {
+                function ManufacturerComponent(_router) {
+                    this._router = _router;
                 }
+                ManufacturerComponent.prototype.gotoDetail = function (manufacturer) {
+                    var link = ['ManufacturerDetail', { id: manufacturer.id }];
+                    this._router.navigate(link);
+                };
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', manufacturer_1.Manufacturer)
@@ -33,7 +41,7 @@ System.register(['angular2/core', '../../models/manufacturer'], function(exports
                         selector: 'manufacturer',
                         templateUrl: 'app/templates/manufacturer.component.html',
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [router_1.Router])
                 ], ManufacturerComponent);
                 return ManufacturerComponent;
             }());
