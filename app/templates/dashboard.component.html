@@ -1,8 +1,8 @@
 <div class="p-t">
     <div class="page-header">
-        <h1>Top Ships</h1>
+        <h1>{{title}}</h1>
     </div>
-    <div class="card-group">
+    <div class="card-group" *ngIf="ships">
         <row class="row" *ngFor="#row of ships" [row]="row"></row>
     </div>
 </div>
