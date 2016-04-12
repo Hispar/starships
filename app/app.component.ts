@@ -1,9 +1,10 @@
 import {Component} from 'angular2/core';
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
-import { ShipService } from './services/ship.service';
-import { DashboardComponent } from './dashboard.component'
-import { ShipDetailComponent } from './ship-detail.component'
+import {ShipService} from './services/ship.service';
+import {ManufacturerService} from './services/manufacturer.service';
+import {DashboardComponent} from './dashboard.component'
+import {ShipDetailComponent} from './ship-detail.component'
 import {ManufacturerListComponent} from './components/manufacturer/manufacturer-list.component'
 
 
@@ -14,6 +15,7 @@ import {ManufacturerListComponent} from './components/manufacturer/manufacturer-
     providers: [
         ROUTER_PROVIDERS,
         ShipService,
+        ManufacturerService
     ]
 })
 @RouteConfig([

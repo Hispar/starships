@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', './services/ship.service', './dashboard.component', './ship-detail.component', './components/manufacturer/manufacturer-list.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', './services/ship.service', './services/manufacturer.service', './dashboard.component', './ship-detail.component', './components/manufacturer/manufacturer-list.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', './services/ship.service', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, ship_service_1, dashboard_component_1, ship_detail_component_1, manufacturer_list_component_1;
+    var core_1, router_1, ship_service_1, manufacturer_service_1, dashboard_component_1, ship_detail_component_1, manufacturer_list_component_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router', './services/ship.service', 
             },
             function (ship_service_1_1) {
                 ship_service_1 = ship_service_1_1;
+            },
+            function (manufacturer_service_1_1) {
+                manufacturer_service_1 = manufacturer_service_1_1;
             },
             function (dashboard_component_1_1) {
                 dashboard_component_1 = dashboard_component_1_1;
@@ -45,6 +48,7 @@ System.register(['angular2/core', 'angular2/router', './services/ship.service', 
                         providers: [
                             router_1.ROUTER_PROVIDERS,
                             ship_service_1.ShipService,
+                            manufacturer_service_1.ManufacturerService
                         ]
                     }),
                     router_1.RouteConfig([
