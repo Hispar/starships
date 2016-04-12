@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from 'angular2/core';
 import {RouteParams} from 'angular2/router';
 
 import {Ship} from './models/ship';
-import {ShipService} from './ship.service';
+import {ShipService} from './services/ship.service';
 
 @Component({
     selector: 'ship-detail',

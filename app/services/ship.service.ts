@@ -1,6 +1,6 @@
 import {Injectable} from 'angular2/core';
 
-import {SHIPS} from './mocks/mock-ships';
+import {SHIPS} from '../mocks/mock-ships';
 
 @Injectable()
 export class ShipService {
