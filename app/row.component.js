@@ -31,7 +31,7 @@ System.register(['angular2/core', './ship.component'], function(exports_1, conte
                 RowComponent = __decorate([
                     core_1.Component({
                         selector: 'row',
-                        template: "\n    <div class=\"row\">\n      <ship *ngFor=\"#ship of row\" [ship]=\"ship\"></ship>\n    </div>\n  ",
+                        template: "\n      <ship *ngFor=\"#ship of row\" [ship]=\"ship\"></ship>\n  ",
                         directives: [ship_component_1.ShipComponent]
                     }), 
                     __metadata('design:paramtypes', [])
