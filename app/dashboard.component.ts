@@ -12,6 +12,7 @@ import {SearchPipe} from "./pipes/search.pipe";
 })
 export class DashboardComponent implements OnInit {
     ships = [];
+    elements = 3;
 
     constructor(private _shipService:ShipService) {
     }
@@ -20,8 +21,8 @@ export class DashboardComponent implements OnInit {
         var that = this;
         this._shipService.getShips()
             .then(function (ships) {
-                for (var j = 0; (j * 4) < ships.length; j++) {
-                    that.ships[j] = ships.slice(4 * j, 4 * j + 4);
+                for (var j = 0; (j * that.elements) < ships.length; j++) {
+                    that.ships[j] = ships.slice(that.elements * j, that.elements * j + that.elements);
                 }
             });
     }
