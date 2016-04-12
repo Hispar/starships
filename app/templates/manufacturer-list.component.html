@@ -1,0 +1,8 @@
+<div class="p-t">
+    <div class="page-header">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="card-group" *ngIf="manufacturers.length > 0">
+        <manufacturer-row class="row" *ngFor="#row of manufacturers" [row]="row"></manufacturer-row>
+    </div>
+</div>
