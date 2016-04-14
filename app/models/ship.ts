@@ -6,4 +6,6 @@ export class Ship {
     description:string;
     image:string;
     focus:ShipFocus[];
+    max_crew:number;
+    cargo_capacity:number;
 }
