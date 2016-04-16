@@ -1,6 +1,23 @@
-<div *ngIf="manufacturer">
-    <h2>{{manufacturer.name}}</h2>
-    <!--<div><label>id: </label>{{manufacturer.id}}</div>-->
-    <img src="{{manufacturer.icon}}">
+<div class="jumbotron jumbotron-fluid" *ngIf="manufacturer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <img class="img-responsive" src="{{manufacturer.icon}}">
+            </div>
+            <div class="col-md-121">
+                <h1 class="display-3">{{manufacturer.name}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-deck" *ngIf="manufacturer.ships">
+                    <row class="row" *ngFor="#row of manufacturer.ships" [row]="row"></row>
+                </div>
+            </div>
+        </div>
+        <hr class="m-y-2">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Back</a>
+        </p>
+    </div>
 </div>
-<button (click)="goBack()">Back</button>

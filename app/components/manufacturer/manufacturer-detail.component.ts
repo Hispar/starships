@@ -4,9 +4,12 @@ import {RouteParams} from 'angular2/router';
 import {Manufacturer} from '../../models/manufacturer';
 import {ManufacturerService} from '../../services/manufacturer.service';
 
+import {ShipRowComponent} from '../ship/ship-row.component'
+
 @Component({
     selector: 'manufacturer-detail',
     templateUrl: 'app/templates/manufacturer-detail.component.html',
+    directives: [ShipRowComponent]
 })
 export class ManufacturerDetailComponent implements OnInit {
     @Input()

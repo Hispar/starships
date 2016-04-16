@@ -10,4 +10,5 @@ export var SHIPFOCUSES:ShipFocus[] = [
     {"id": 7, "name": "Gunship"},
     {"id": 8, "name": "Light Mercantile"},
     {"id": 9, "name": "Interdiction"},
-];
+];5
+
