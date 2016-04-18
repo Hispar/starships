@@ -1,9 +1,12 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router} from 'angular2/router';
 
 // Services
 import {ShipService} from './services/ship.service';
 import {ManufacturerService} from './services/manufacturer.service';
+
+//Home components
+import {HomeComponent} from './components/home.component'
 
 //Ship components
 import {DashboardComponent} from './components/ship/dashboard.component'
@@ -26,10 +29,14 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
 })
 @RouteConfig([
     {
+        path: '/home',
+        name: 'Home',
+        component: HomeComponent,
+        useAsDefault: true
+    }, {
         path: '/dashboard',
         name: 'Dashboard',
         component: DashboardComponent,
-        useAsDefault: true
     }, {
         path: '/manufacturers',
         name: 'Manufacturers',
@@ -46,4 +53,19 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
 ])
 export class AppComponent {
     title = 'Starships';
+    menu = [
+        {
+            'url' : 'Dashboard',
+            'title': 'Naves'
+        },
+        {
+            'url' : 'Manufacturers',
+            'title': 'Fabricantes'
+        },
+    ];
+    router: Router;
+
+    constructor(data: Router) {
+        this.router = data;
+    }
 }
