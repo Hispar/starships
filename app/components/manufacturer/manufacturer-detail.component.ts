@@ -30,7 +30,7 @@ export class ManufacturerDetailComponent implements OnInit {
         this._manufacturerService.getManufacturer(id)
             .then(manufacturer => this.manufacturer = manufacturer);
 
-        this._manufacturerService.getManufacturerShips(1)
+        this._manufacturerService.getManufacturerShips(id)
             .then(function (ships) {
                 for (var j = 0; (j * that.elements) < ships.length; j++) {
                     that.ships[j] = ships.slice(that.elements * j, that.elements * j + that.elements);
