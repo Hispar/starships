@@ -1,1 +1,11 @@
-<ship [ship]="ship1"></ship>
+<div class="p-t">
+    <div class="page-header">
+        <h1>{{title}}</h1>
+        <p>{{home_subtitle}}</p>
+    </div>
+    <div class="card-group">
+        <ship *ngIf="ship1" [ship]="ship1"></ship>
+        <ship *ngIf="ship2" [ship]="ship2"></ship>
+        <ship *ngIf="ship3" [ship]="ship3"></ship>
+    </div>
+</div>
