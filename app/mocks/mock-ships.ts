@@ -8,7 +8,7 @@ export var SHIPS:Ship[] = [
             {"id": 1, "name": 'Racing'}, {"id": 2, "name": "Fighter"},
         ],
         "description": "Si deseas ir desde el punto A al punto B lo más rápido posible y con tanto estilo como sea posible, " +
-        "entonces el ORIGIN M50 es para usted. Con motores sobrealimentados que compensan su poca potencia de fuego, el M50 es una nave para ir RÁPIDO.",
+        "entonces el ORIGIN M50 es para ti. Con motores sobrealimentados que compensan su poca potencia de fuego, el M50 es una nave para ir RÁPIDO.",
         "image": "https://robertsspaceindustries.com/media/xfs6elgejzxz9r/store_small/M50_new_comp47.jpg",
         "max_crew": 1,
         "cargo_capacity": 0,
@@ -251,6 +251,18 @@ export var SHIPS:Ship[] = [
         "description": "",
         "image": "https://robertsspaceindustries.com/media/4otqgybm0y38ur/store_small/F7c-M_super-Hornet_storefront_visual.jpg",
         "max_crew": 2,
+        "cargo_capacity": 0,
+        "manufacturer": 3
+    },
+    {
+        "id": 20,
+        "model": "F7A HORNET",
+        "focus": [
+            {"id": 18, "name": "Military Close Support"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/j2ie1gy9x9zsbr/store_small/F7a.jpg",
+        "max_crew": 1,
         "cargo_capacity": 0,
         "manufacturer": 3
     },
