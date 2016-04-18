@@ -2,18 +2,16 @@ import {Component, OnInit} from 'angular2/core';
 
 import {ShipService} from '../../services/ship.service';
 import {ShipRowComponent} from './ship-row.component';
-//import {SearchPipe} from "./pipes/search.pipe";
 
 @Component({
     selector: 'my-dashboard',
-    //pipes: [SearchPipe],
     templateUrl: 'app/templates/dashboard.component.html',
     directives: [ShipRowComponent]
 })
 export class DashboardComponent implements OnInit {
     ships = [];
     elements = 3;
-    title = 'Top Ships';
+    title = 'All Ships';
 
     constructor(private _shipService:ShipService) {
     }
