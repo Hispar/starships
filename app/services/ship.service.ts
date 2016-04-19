@@ -23,26 +23,7 @@ export class ShipService {
 
     getRandomShipCrew(crew:number, limit:number) {
         return Promise.resolve(SHIPS).then(
-                ships => ships.filter(ship => ship.max_crew === crew).slice(0, limit)
+                ships => ships.filter(ship => ship.max_crew >= crew).slice(0, limit)
         );
-    }
-
-    //getHeroesSlowly() {
-    //    return new Promise<Ship[]>(resolve =>
-    //            setTimeout(()=>resolve(SHIPS), 2000) // 2 seconds
-    //    );
-    //}
-
-    shuffle(array) {
-        var i = 0
-            , j = 0
-            , temp = null
-
-        for (i = array.length - 1; i > 0; i -= 1) {
-            j = Math.floor(Math.random() * (i + 1))
-            temp = array[i]
-            array[i] = array[j]
-            array[j] = temp
-        }
     }
 }
