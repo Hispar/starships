@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     title = 'Star Citizen';
     home_subtitle = 'Aquí puedes ver algunas de las naves que se encuentran disponibles en Star Citizen';
     single_ship_title = 'Naves de un solo tripulante';
-    double_ship_title = 'Naves de dos tripulantes';
+    double_ship_title = 'Naves multi tripuladas';
     capital_ship_title = 'Naves capitales';
 
 
