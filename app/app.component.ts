@@ -11,6 +11,7 @@ import {HomeComponent} from './components/home.component'
 //Ship components
 import {DashboardComponent} from './components/ship/dashboard.component'
 import {ShipDetailComponent} from './components/ship/ship-detail.component'
+import {SingleSeatShipsComponent} from './components/ship/single-seat-ships.component'
 
 // Manufacturer components
 import {ManufacturerListComponent} from './components/manufacturer/manufacturer-list.component'
@@ -34,19 +35,23 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
         component: HomeComponent,
         useAsDefault: true
     }, {
-        path: '/dashboard',
+        path: '/naves',
         name: 'Dashboard',
         component: DashboardComponent,
     }, {
-        path: '/manufacturers',
+        path: '/naves-un-tripulante',
+        name: 'SingleSeatShips',
+        component: SingleSeatShipsComponent,
+    }, {
+        path: '/fabricantes',
         name: 'Manufacturers',
         component: ManufacturerListComponent,
     }, {
-        path: '/ship/:id',
+        path: '/nave/:id',
         name: 'ShipDetail',
         component: ShipDetailComponent,
     }, {
-        path: '/manufacturer/:id',
+        path: '/fabricante/:id',
         name: 'ManufacturerDetail',
         component: ManufacturerDetailComponent,
     }

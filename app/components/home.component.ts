@@ -1,4 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
+import {ROUTER_DIRECTIVES, Router} from 'angular2/router'
 
 // Ships
 import {Ship} from '../models/ship'
@@ -8,7 +9,7 @@ import {ShipComponent} from './ship/ship.component'
 @Component({
     selector: 'home',
     templateUrl: 'app/templates/home.component.html',
-    directives: [ShipComponent]
+    directives: [ROUTER_DIRECTIVES, ShipComponent]
 })
 export class HomeComponent implements OnInit {
     single_ships = [];
@@ -20,9 +21,13 @@ export class HomeComponent implements OnInit {
     single_ship_title = 'Naves de un solo tripulante';
     double_ship_title = 'Naves multi tripuladas';
     capital_ship_title = 'Naves capitales';
+    router: Router;
 
-
-    constructor(private _shipService:ShipService) {
+    constructor(
+        private _shipService:ShipService,
+        private data:Router
+    ) {
+        this.router = data;
     }
 
     ngOnInit() {

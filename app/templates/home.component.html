@@ -11,7 +11,7 @@
             <div class="card-group">
                 <ship *ngFor="#ship of single_ships" [ship]="ship"></ship>
             </div>
-            <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Ver más</a>
+            <a class="btn btn-primary btn-lg" [routerLink]="['SingleSeatShips']" role="button">Ver más</a>
         </div>
     </div>
     <div class="row" *ngIf="double_ships.length > 0">
