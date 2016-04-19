@@ -42,7 +42,7 @@ export var SHIPS:Ship[] = [
         "id": 4,
         "model": "Mustang Delta",
         "focus": [
-            {"id": 5, "name": 'Fighter'}
+            {"id": 2, "name": 'Fighter'}
         ],
         "description": "",
         "image": "https://robertsspaceindustries.com/media/dtqy8jpl0f9cbr/store_small/Delta-Front.jpg",
