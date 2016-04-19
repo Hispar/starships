@@ -266,4 +266,100 @@ export var SHIPS:Ship[] = [
         "cargo_capacity": 0,
         "manufacturer": 3
     },
-]
+    {
+        "id": 21,
+        "model": "CONSTELLATION ANDROMEDA",
+        "focus": [
+            {"id": 19, "name": "Multi-Function"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/vzyhde6cjgsn7r/store_small/Andromeda_Storefront.jpg",
+        "max_crew": 5,
+        "cargo_capacity": 134,
+        "manufacturer": 11
+    },
+    {
+        "id": 22,
+        "model": "CONSTELLATION TAURUS",
+        "focus": [
+            {"id": 20, "name": "Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/3vj4o4l5uggk7r/store_small/Taurus-Storefront.jpg",
+        "max_crew": 4,
+        "cargo_capacity": 243,
+        "manufacturer": 11
+    },
+    {
+        "id": 23,
+        "model": "CONSTELLATION AQUILA",
+        "focus": [
+            {"id": 4, "name": "Exploration"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/u0pbc9k058nuhr/store_small/Aquila_Storefront.jpg",
+        "max_crew": 4,
+        "cargo_capacity": 134,
+        "manufacturer": 11
+    },
+    {
+        "id": 24,
+        "model": "CONSTELLATION PHOENIX",
+        "focus": [
+            {"id": 21, "name": "Luxury Touring"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/0o9gi8gbsm178r/store_small/Phoenix_Storefront.jpg",
+        "max_crew": 4,
+        "cargo_capacity": 66,
+        "manufacturer": 11
+    },
+    {
+        "id": 25,
+        "model": "FREELANCER",
+        "focus": [
+            {"id": 10, "name": "Mercantile"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/ts39qbhy6x38pr/store_small/Freelancer_storefront_visual.jpg",
+        "max_crew": 2,
+        "cargo_capacity": 52,
+        "manufacturer": 9
+    },
+    {
+        "id": 26,
+        "model": "FREELANCER DUR",
+        "focus": [
+            {"id": 4, "name": "Exploration"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/gui7c4ac9u4v3r/store_small/Freelancer_dur_storefront_visual.jpg",
+        "max_crew": 2,
+        "cargo_capacity": 52,
+        "manufacturer": 9
+    },
+    {
+        "id": 27,
+        "model": "FREELANCER MAX",
+        "focus": [
+            {"id": 20, "name": "Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/pd2zoaytunmrkr/store_small/Freelancer_max_storefront_visual.jpg",
+        "max_crew": 2,
+        "cargo_capacity": 123,
+        "manufacturer": 9
+    },
+    {
+        "id": 27,
+        "model": "FREELANCER MIS",
+        "focus": [
+            {"id": 11, "name": "Militia"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/yie4k1qvzqqr0r/store_small/Freelancer_mis_storefront_visual.jpg",
+        "max_crew": 3,
+        "cargo_capacity": 52,
+        "manufacturer": 9
+    },
+];
