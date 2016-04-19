@@ -11,25 +11,26 @@ import {ShipComponent} from './ship/ship.component'
     directives: [ShipComponent]
 })
 export class HomeComponent implements OnInit {
-    ship1:Ship;
-    ship2:Ship;
-    ship3:Ship;
+    single_ships = [];
+    double_ships = [];
+    capital_ships = [];
     elements = 20;
     title = 'Star Citizen';
-    home_subtitle = 'Aquí puedes ver algunas de las naves que se encuentras disponibles en Star Citizen';
+    home_subtitle = 'Aquí puedes ver algunas de las naves que se encuentran disponibles en Star Citizen';
+    single_ship_title = 'Naves de un solo tripulante';
+    double_ship_title = 'Naves de dos tripulantes';
+    capital_ship_title = 'Naves capitales';
+
 
     constructor(private _shipService:ShipService) {
     }
 
     ngOnInit() {
-        var id = Math.floor(Math.random() * this.elements + 1);
-        this._shipService.getShip(id)
-            .then(ship => this.ship1 = ship);
-        id = Math.floor(Math.random() * this.elements + 1);
-        this._shipService.getShip(id)
-            .then(ship => this.ship2 = ship);
-        id = Math.floor(Math.random() * this.elements + 1);
-        this._shipService.getShip(id)
-            .then(ship => this.ship3 = ship);
+        this._shipService.getRandomShipCrew(1, 3)
+            .then(ships => this.single_ships = ships);
+        this._shipService.getRandomShipCrew(2, 3)
+            .then(ships => this.double_ships = ships);
+        this._shipService.getRandomShipCrew(10, 3)
+            .then(ships => this.capital_ships = ships);
     }
 }
