@@ -8,6 +8,9 @@ import {ManufacturerService} from './services/manufacturer.service';
 //Home components
 import {HomeComponent} from './components/home.component'
 
+//Extra components
+import {DropDownComponent} from './components/extras/dropdown.component'
+
 //Ship components
 import {DashboardComponent} from './components/ship/dashboard.component'
 import {ShipDetailComponent} from './components/ship/ship-detail.component'
@@ -22,11 +25,11 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
 @Component({
     selector: 'my-app',
     templateUrl: 'app/templates/app.component.html',
-    directives: [ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES, DropDownComponent],
     providers: [
         ROUTER_PROVIDERS,
         ShipService,
-        ManufacturerService
+        ManufacturerService,
     ]
 })
 @RouteConfig([
@@ -65,17 +68,36 @@ export class AppComponent {
     title = 'Starships';
     menu = [
         {
-            'url' : 'Dashboard',
-            'title': 'Naves'
+            'url': 'Dashboard',
+            'title': 'Naves',
+            'submenu': [
+                {
+                    'url': 'Dashboard',
+                    'title': 'Todas'
+                },
+                {
+                    'url': 'SingleSeatShips',
+                    'title': 'De un tripulante'
+                },
+                {
+                    'url': 'MultiCrewShips',
+                    'title': 'De varios tripulantes'
+                },
+            ]
         },
         {
-            'url' : 'Manufacturers',
+            'url': 'Manufacturers',
             'title': 'Fabricantes'
         },
     ];
-    router: Router;
+    menu_over = '';
+    router:Router;
 
-    constructor(data: Router) {
+    constructor(data:Router) {
         this.router = data;
+    }
+
+    showSubmenu(link){
+        this.menu_over = link;
     }
 }
