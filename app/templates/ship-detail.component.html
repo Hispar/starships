@@ -1,7 +1,10 @@
 <div class="jumbotron jumbotron-fluid" *ngIf="ship">
     <div class="container">
-        <h1 class="display-3">{{ship.model}}</h1>
-
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-3">{{ship.model}}</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <img class="img-responsive" src="{{ship.image}}">
@@ -14,8 +17,8 @@
                 <hr class="m-y-2">
                 <p>{{ship.description}}</p>
                 <ul>
-                    <li><label>Max crew:</label> {{ship.max_crew}}</li>
-                    <li><label>Cargo capacity:</label> {{ship.cargo_capacity}}</li>
+                    <li><label>Tripulación máxima:</label> {{ship.max_crew}}</li>
+                    <li><label>Capacidad de carga:</label> {{ship.cargo_capacity}}</li>
                 </ul>
             </div>
         </div>
