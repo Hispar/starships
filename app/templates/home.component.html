@@ -22,7 +22,7 @@
             <div class="card-group">
                 <ship *ngFor="#ship of double_ships" [ship]="ship"></ship>
             </div>
-            <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Ver más</a>
+            <a class="btn btn-primary btn-lg" [routerLink]="['MultiCrewShips']" role="button">Ver más</a>
         </div>
     </div>
     <div class="row" *ngIf="capital_ships.length > 0">

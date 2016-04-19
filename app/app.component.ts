@@ -12,6 +12,7 @@ import {HomeComponent} from './components/home.component'
 import {DashboardComponent} from './components/ship/dashboard.component'
 import {ShipDetailComponent} from './components/ship/ship-detail.component'
 import {SingleSeatShipsComponent} from './components/ship/single-seat-ships.component'
+import {MultiCrewShipsComponent} from './components/ship/multi-crew-ships.component'
 
 // Manufacturer components
 import {ManufacturerListComponent} from './components/manufacturer/manufacturer-list.component'
@@ -42,6 +43,10 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
         path: '/naves-un-tripulante',
         name: 'SingleSeatShips',
         component: SingleSeatShipsComponent,
+    }, {
+        path: '/naves-varios-tripulantes',
+        name: 'MultiCrewShips',
+        component: MultiCrewShipsComponent,
     }, {
         path: '/fabricantes',
         name: 'Manufacturers',
