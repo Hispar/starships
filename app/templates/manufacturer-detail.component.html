@@ -1,23 +1,20 @@
 <div class="jumbotron jumbotron-fluid" *ngIf="manufacturer">
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
-                <img class="img-responsive" src="{{manufacturer.icon}}">
-            </div>
-            <div class="col-md-121">
+            <div class="col-md-11">
                 <h1 class="display-3">{{manufacturer.name}}</h1>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card-deck" *ngIf="manufacturer.ships">
-                    <row class="row" *ngFor="#row of manufacturer.ships" [row]="row"></row>
-                </div>
+            <div class="col-md-1">
+                <p>{{manufacturer.code}}</p>
+                <img src="{{manufacturer.icon}}">
             </div>
+        </div>
+        <div class="card-group" *ngIf="ships">
+            <row class="row" *ngFor="#row of ships" [row]="row"></row>
         </div>
         <hr class="m-y-2">
         <p class="lead">
-            <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Back</a>
+            <a class="btn btn-primary btn-lg" (click)="goBack()" role="button">Volver</a>
         </p>
     </div>
 </div>

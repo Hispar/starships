@@ -1,6 +1,7 @@
 import {Injectable} from 'angular2/core';
 
 import {MANUFACTURERS} from '../mocks/mock-manufacturers';
+import {SHIPS} from '../mocks/mock-ships';
 
 @Injectable()
 export class ManufacturerService {
@@ -12,5 +13,11 @@ export class ManufacturerService {
 
     getManufacturers() {
         return Promise.resolve(MANUFACTURERS);
+    }
+
+    getManufacturerShips(id:number) {
+        return Promise.resolve(SHIPS).then(
+                ships => ships.filter(ship => ship.manufacturer === id)
+        );
     }
 }

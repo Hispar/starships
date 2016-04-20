@@ -1,10 +1,15 @@
 <div (click)="gotoDetail(ship)" class="card">
+    <div class="card-header">
+        {{ship.model}}
+    </div>
     <img class="card-img-top" src="{{ship.image}}" alt="{{ship.model}}">
+
     <div class="card-block">
-        <h4 class="card-title">{{ship.model}}</h4>
-            <span class="card-text" *ngFor="#focus of ship.focus; #i=index">
+        <p class="card-text">
+            <span *ngFor="#focus of ship.focus; #i=index">
                 <span *ngIf="i">|</span>
                 {{ focus.name }}
             </span>
+        </p>
     </div>
 </div>
