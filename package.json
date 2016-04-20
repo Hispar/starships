@@ -1,8 +1,13 @@
 {
   "name": "starships",
   "version": "1.0.0",
+  "description": "Starships test",
+  "repository": {
+    "url": "https://github.com/Hispar/starships.git"
+  },
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "build.prod": "gulp build.prod --color",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
@@ -13,6 +18,7 @@
   "dependencies": {
     "angular2": "2.0.0-beta.13",
     "es6-shim": "^0.35.0",
+    "gulp": "^3.9.1",
     "ng2-bootstrap": "^1.0.10",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
