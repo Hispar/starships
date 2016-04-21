@@ -1,5 +1,14 @@
-import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router} from 'angular2/router';
+import {Component, provide} from 'angular2/core';
+import {
+    RouteConfig,
+    ROUTER_DIRECTIVES,
+    ROUTER_PROVIDERS,
+    Router,
+    Route,
+    Location,
+    LocationStrategy,
+    HashLocationStrategy
+} from 'angular2/router';
 
 // Services
 import {ShipService} from './services/ship.service';
@@ -28,8 +37,9 @@ import {ManufacturerDetailComponent} from './components/manufacturer/manufacture
     directives: [ROUTER_DIRECTIVES, DropDownComponent],
     providers: [
         ROUTER_PROVIDERS,
+        provide(LocationStrategy, {useClass: HashLocationStrategy}),
         ShipService,
-        ManufacturerService,
+        ManufacturerService
     ]
 })
 @RouteConfig([
@@ -92,8 +102,9 @@ export class AppComponent {
     ];
     menu_over = '';
     router:Router;
-
-    constructor(data:Router) {
+    location: Location;
+    constructor(location: Location, data:Router) {
+        this.location = location;
         this.router = data;
     }
 
