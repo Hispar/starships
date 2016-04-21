@@ -84,7 +84,7 @@ export var MANUFACTURERS:Manufacturer[] = [
         "id": 12,
         "name": "Vanduul",
         "icon": "https://robertsspaceindustries.com/media/ofli1kgpqq5y6r/icon/Vanduul.png",
-        "code": 'CNOU'
+        "code": 'VANDUUL'
     },
     {
         "id": 13,

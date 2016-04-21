@@ -362,4 +362,184 @@ export var SHIPS:Ship[] = [
         "cargo_capacity": 52,
         "manufacturer": 9
     },
+    {
+        "id": 28,
+        "model": "CUTLASS BLACK",
+        "focus": [
+            {"id": 11, "name": "Militia"}, {"id": 12, "name": "Patrol"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/7tcxllnna6a9hr/store_small/Drake_cutlass_storefront_visual.jpg",
+        "max_crew": 3,
+        "cargo_capacity": 33,
+        "manufacturer": 6
+    },
+    {
+        "id": 29,
+        "model": "CUTLASS RED",
+        "focus": [
+            {"id": 21, "name": "Search & Rescue"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/anznazc3gf5oar/store_small/Slide_Cut-Red.jpg",
+        "max_crew": 4,
+        "cargo_capacity": 33,
+        "manufacturer": 6
+    },
+    {
+        "id": 30,
+        "model": "CUTLASS BLUE",
+        "focus": [
+            {"id": 22, "name": "Police"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/8d5ywktt23231r/store_small/Blue-WR-Orth_000000.jpg",
+        "max_crew": 3,
+        "cargo_capacity": 33,
+        "manufacturer": 6
+    },
+    {
+        "id": 31,
+        "model": "AVENGER STALKER",
+        "focus": [
+            {"id": 23, "name": "Interceptor"}, {"id": 24, "name": "Bounty Hounting"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/3dx8jqsd79dmpr/store_small/Avenger_storefront_visualjpg.jpg",
+        "max_crew": 1,
+        "cargo_capacity": 4,
+        "manufacturer": 2
+    },
+    {
+        "id": 32,
+        "model": "AVENGER WARLOCK",
+        "focus": [
+            {"id": 24, "name": "EMP Warfare"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/3dx8jqsd79dmpr/store_small/Avenger_storefront_visualjpg.jpg",
+        "max_crew": 1,
+        "cargo_capacity": "desconocida",
+        "manufacturer": 2
+    },
+    {
+        "id": 33,
+        "model": "AVENGER TITAN",
+        "focus": [
+            {"id": 25, "name": "Light Cargo Hauler"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/3dx8jqsd79dmpr/store_small/Avenger_storefront_visualjpg.jpg",
+        "max_crew": 1,
+        "cargo_capacity": "desconocida",
+        "manufacturer": 2
+    },
+    {
+        "id": 34,
+        "model": "GLADIATOR",
+        "focus": [
+            {"id": 25, "name": "Carrier-based Bomber"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/ye6hvyo93oc2ar/store_small/Gladiator-WB_FrontLeft.jpg",
+        "max_crew": 2,
+        "cargo_capacity": 0,
+        "manufacturer": 3
+    },
+    {
+        "id": 35,
+        "model": "STARFARER",
+        "focus": [
+            {"id": 26, "name": "Refuel"}, {"id": 20, "name": "Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/k4f44vqnex0m1r/store_small/SF-Chris-O-2.jpg",
+        "max_crew": 7,
+        "cargo_capacity": 3321,
+        "manufacturer": 9
+    },
+    {
+        "id": 36,
+        "model": "STARFARER GEMINI",
+        "focus": [
+            {"id": 27, "name": "Military Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/4pgpl7n71hijzr/store_small/Gemini2338.jpg",
+        "max_crew": 7,
+        "cargo_capacity": 2488,
+        "manufacturer": 9
+    },
+    {
+        "id": 37,
+        "model": "CATERPILLAR",
+        "focus": [
+            {"id": 20, "name": "Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/wde7ozthdqjnxr/store_small/Cat-Model-Render4.jpg",
+        "max_crew": 5,
+        "cargo_capacity": 512,
+        "manufacturer": 6
+    },
+    {
+        "id": 38,
+        "model": "CATERPILLAR",
+        "focus": [
+            {"id": 20, "name": "Transport"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/wde7ozthdqjnxr/store_small/Cat-Model-Render4.jpg",
+        "max_crew": 5,
+        "cargo_capacity": 512,
+        "manufacturer": 6
+    },
+    {
+        "id": 38,
+        "model": "RETALIATOR BOMBER",
+        "focus": [
+            {"id": 28, "name": "Heavy Bomber"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/kz6mu0tt0u06er/store_small/Retaliator-Ortho_v2.jpg",
+        "max_crew": 6,
+        "cargo_capacity": 128,
+        "manufacturer": 2
+    },
+    {
+        "id": 39,
+        "model": "RETALIATOR BASE",
+        "focus": [
+            {"id": 29, "name": "Versatile Fighter"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/bp86xpkhi47etr/store_small/Retaliator_engine_shot_a.jpg",
+        "max_crew": 6,
+        "cargo_capacity": 128,
+        "manufacturer": 2
+    },
+    {
+        "id": 40,
+        "model": "VANDUUL SCYTHE",
+        "focus": [
+            {"id": 30, "name": "Medium Fighter"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/wdtdkzl0x31ver/store_small/Vanduul-Scythe_storefront_visual.jpg",
+        "max_crew": 1,
+        "cargo_capacity": 0,
+        "manufacturer": 12
+    },
+    {
+        "id": 41,
+        "model": "IDRIS-M",
+        "focus": [
+            {"id": 31, "name": "Frigate"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/rfjjekm57en5jr/store_small/IDRISdownfrontquarter_copy.jpg",
+        "max_crew": 10,
+        "cargo_capacity": 860,
+        "manufacturer": 2
+    },
 ];
