@@ -542,4 +542,76 @@ export var SHIPS:Ship[] = [
         "cargo_capacity": 860,
         "manufacturer": 2
     },
+    {
+        "id": 42,
+        "model": "IDRIS-P",
+        "focus": [
+            {"id": 31, "name": "Frigate"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/rfjjekm57en5jr/store_small/IDRISdownfrontquarter_copy.jpg",
+        "max_crew": 10,
+        "cargo_capacity": 1720,
+        "manufacturer": 2
+    },
+    {
+        "id": 43,
+        "model": "P-52 MERLIN",
+        "focus": [
+            {"id": 32, "name": "Snub Fighter"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/a9231ysz5cnvor/store_small/Top.jpg",
+        "max_crew": 1,
+        "cargo_capacity": 0,
+        "manufacturer": 8
+    },
+    {
+        "id": 44,
+        "model": "P-72 ARCHIMEDES",
+        "focus": [
+            {"id": 33, "name": "Versatile"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/xqgbgw3x6o54ir/store_small/Archimedes_Front_01.jpg",
+        "max_crew": 1,
+        "cargo_capacity": 0,
+        "manufacturer": 8
+    },
+    {
+        "id": 45,
+        "model": "KHARTU-AL",
+        "focus": [
+            {"id": 34, "name": "Light Figther"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/zzycyqkpn9vu8r/store_small/Image_landed.jpg",
+        "max_crew": 1,
+        "cargo_capacity": 0,
+        "manufacturer": 13
+    },
+    {
+        "id": 46,
+        "model": "MERCHANTMAN",
+        "focus": [
+            {"id": 35, "name": "Trade"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/63lxivb7mi3vzr/store_small/Banu_merchantman_side_Version_A.jpg",
+        "max_crew": 8,
+        "cargo_capacity": 5018,
+        "manufacturer": 4
+    },
+    {
+        "id": 47,
+        "model": "890 JUMP",
+        "focus": [
+            {"id": 21, "name": "Luxury Touring"}
+        ],
+        "description": "",
+        "image": "https://robertsspaceindustries.com/media/aokcb6ay0i0jpr/store_small/890_beautyShot-Concept_V01High_NF_140709.jpg",
+        "max_crew": 5,
+        "cargo_capacity": 360,
+        "manufacturer": 4
+    },
 ];

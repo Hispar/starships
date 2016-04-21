@@ -36,7 +36,7 @@ export var MANUFACTURERS:Manufacturer[] = [
         "id": 4,
         "name": "Banu",
         "icon": "https://robertsspaceindustries.com/media/3ktltnm6ph4cfr/icon/Banu.png",
-        "code": 'CNOU'
+        "code": 'BANU'
     },
     {
         "id": 5,
@@ -60,7 +60,7 @@ export var MANUFACTURERS:Manufacturer[] = [
         "id": 8,
         "name": "Kruger Intergalactic",
         "icon": "https://robertsspaceindustries.com/media/4u3vwg26y1wm3r/icon/Kruger.png",
-        "code": 'CNOU'
+        "code": 'KRGR'
     },
     {
         "id": 9,
@@ -90,7 +90,7 @@ export var MANUFACTURERS:Manufacturer[] = [
         "id": 13,
         "name": "Xi'An",
         "icon": "https://robertsspaceindustries.com/media/p8niedyslwh6kr/icon/Xian.png",
-        "code": 'CNOU'
+        "code": 'XIAN'
     },
 ];
 
